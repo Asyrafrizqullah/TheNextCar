@@ -1,0 +1,36 @@
+﻿<Window x:Class="TheNextCar.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TheNextCar"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+    <Grid Background="Black" Height="434" VerticalAlignment="Bottom" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="79*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="429*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="StartButton" Content="STOPED" Click="OnStartButtonClicked" HorizontalAlignment="Left" Margin="114,304,0,0" VerticalAlignment="Top" Height="40" Width="150" Foreground="White" Background="Red" FontWeight="Bold" FontSize="18" Grid.Row="1" Grid.Column="1"/>
+        <Button x:Name="DoorOpenButton" Content="CLOSED" Click="OnDoorOpenButtonClicked" HorizontalAlignment="Left" Margin="317,318,0,0" VerticalAlignment="Top" Height="26" Width="84" Grid.Row="1" Grid.Column="1"/>
+        <Button x:Name="LockDoorButton" Content="LOCKED" Click="OnLockDoorButtonClicked" HorizontalAlignment="Left" Margin="437,318,0,0" VerticalAlignment="Top" Height="26" Width="84" Grid.Row="1" Grid.Column="1"/>
+        <Button x:Name="AccuButton" Content="ON" Click="OnAccuButtonClicked" HorizontalAlignment="Left" Margin="579,318,0,0" VerticalAlignment="Top" Height="26" Width="84" Grid.Row="1" Grid.Column="1"/>
+        <Label x:Name="status" Content="no power available" HorizontalAlignment="Left" Margin="114,352,0,0" VerticalAlignment="Top" Width="110" Foreground="White" Grid.Row="1" Grid.Column="1"/>
+        <Label x:Name="DoorOpenState" Content="Close" HorizontalAlignment="Left" Margin="317,344,0,0" VerticalAlignment="Top" Width="84" Foreground="White" Grid.Row="1" Grid.Column="1"/>
+        <Label x:Name="LockDoorState" Content="Door is Unlocked" HorizontalAlignment="Left" Margin="437,344,0,0" VerticalAlignment="Top" Width="114" Foreground="White" Grid.Row="1" Grid.Column="1"/>
+        <Label x:Name="AccuState" Content="no power" HorizontalAlignment="Left" Margin="579,344,0,0" VerticalAlignment="Top" Width="80" Foreground="White" Grid.Row="1" Grid.Column="1"/>
+        <Label x:Name="Door" Content="Door" HorizontalAlignment="Left" Margin="317,292,0,0" VerticalAlignment="Top" Width="66" Foreground="White" Grid.Row="1" Grid.Column="1"/>
+        <Label x:Name="Security" Content="Security" HorizontalAlignment="Left" Margin="437,292,0,0" VerticalAlignment="Top" Width="84" Foreground="White" Grid.Row="1" Grid.Column="1"/>
+        <Label x:Name="Power" Content="Power" HorizontalAlignment="Left" Margin="579,292,0,0" VerticalAlignment="Top" Width="64" Foreground="White" Grid.Row="1" Grid.Column="1"/>
+        <Image Source="assets/navigation.jpg" Margin="19,5,29,156" Grid.Row="1" Grid.Column="1"/>
+        <Label x:Name="Speed" Content="126" HorizontalAlignment="Left" Margin="197,148,0,0" VerticalAlignment="Top" Height="81" Width="142" FontSize="48" Grid.Row="1" Grid.Column="1"/>
+        <Label x:Name="km" Content="km/h" HorizontalAlignment="Left" Margin="226,212,0,0" VerticalAlignment="Top" Grid.Row="1" Grid.Column="1"/>
+        <Label x:Name="Speed_Copy" Content="48" HorizontalAlignment="Left" Margin="508,155,0,0" VerticalAlignment="Top" Height="81" Width="142" FontSize="48" Grid.Row="1" Grid.Column="1"/>
+        <Label x:Name="km_Copy" Content="meter" HorizontalAlignment="Left" Margin="523,212,0,0" VerticalAlignment="Top" Grid.Row="1" Grid.Column="1"/>
+    </Grid>
+</Window>
